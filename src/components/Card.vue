@@ -84,7 +84,7 @@ export default {
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        background-image:  url(@/assets/img/1.png);
+        background-image:  url(@/assets/img/3.png);
     }
 
     &__heading {
@@ -92,7 +92,7 @@ export default {
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
-        color: $color-primary-dark;
+        color: $color-primary-light;
         position: absolute;
         top: 12rem;
         right: 2rem;
@@ -103,15 +103,15 @@ export default {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        background-image: linear-gradient(to right bottom, 
-            rgba($color-primary-light, .85), 
-            rgba($color-tertiary-light, .85));
+        // background-image: linear-gradient(to right bottom, 
+        //     rgba($color-primary-light, .85), 
+        //     rgba($color-tertiary-light, .85));
 
     }   
 
     &__details {
         padding: 3rem;
-        background: $color-secondary-dark;
+        // background: $color-secondary-dark;
 
         ul {
             list-style: none;
