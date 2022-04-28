@@ -17,7 +17,7 @@
   height: 100vh;
   position: relative;
   padding: 3rem;
-  background:$color-tertiary-dark;
+  background:$color-primary-light;
    nav{
     position: fixed;
     right:6rem;
