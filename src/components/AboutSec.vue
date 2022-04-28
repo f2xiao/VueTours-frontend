@@ -20,7 +20,7 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img v-for="image in images" :key="image.src"
-                :src="item.src"
+                :src="image.src"
                 :alt="image.alt"
                 :class="'composition__photo composition__photo--p'+ image.id"
               />
@@ -48,27 +48,22 @@ export default {
             images:[
                 {   
                     id:'1',
-                    src:'img/nat-1.jpg',
+                    src:require('@/assets/img/nat-1.jpg'),
                     alt:'Photo 1'
                 },
                 {
                     id:'2',
-                    src:'img/nat-2.jpg',
+                    src:require('@/assets/img/nat-2.jpg'),
                     alt:'Photo 2'
                 },
                 {
                     id:'3',
-                    src:'img/nat-3.jpg',
+                    src:require('@/assets/img/nat-3.jpg'),
                     alt:'Photo 3'
                 }
             ]
         }
     },
-    // computed:{
-    //     assetsPath(file){
-    //         return `@/assets/`+file
-    //     }
-    // }
 
 }
 </script>
