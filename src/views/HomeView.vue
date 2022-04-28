@@ -1,10 +1,6 @@
 <template>
   <div class="main">
    <Home></Home>
-   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <p class="footer__copyright">
             Built by <a href="https://github.com/f2xiao" class="footer__link">f2xiao</a>
   </p>
@@ -14,21 +10,14 @@
 
 <style lang="scss">
 .main{
-  height: 100vh;
+  height: calc(100vh - 6rem);
   position: relative;
-  padding: 3rem;
   background:$color-primary-light;
-   nav{
+  .footer__copyright{
     position: fixed;
     right:6rem;
     bottom:7rem;
   }
-  .footer__copyright{
-    position: fixed;
-    left: 7rem;
-    bottom:7rem;
-  }
-
 }
 </style>
 <script>
