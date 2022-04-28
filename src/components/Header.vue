@@ -4,13 +4,14 @@
         <img src="@/assets/img/logo.png" alt="Logo" class="header__logo" />
       </div>
       <div class="header__text-box">
-        <h1 class="heading-primary--main">
+       <div class="heading-primary">
+          <h1 class="heading-primary--main">
           <span>Oriental Pearl</span>
         </h1>
         <h1 class="heading-primary--sub">
          <span>the most authenticated Southern Chinese Food</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">ORDER now!</a>
+       </div>
       </div>
     </header>
 </template>
@@ -43,20 +44,22 @@ export default {
 
   &__text-box {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    // top: 40%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     // text-align: center;
     .heading-primary--main{
       position: absolute;
       right:0;
-
+      max-width:50rem;
     }
     .heading-primary--sub{
       position: absolute;
       left:0;
+      bottom:0;
+      max-width: 60rem;
     
     }
   }
