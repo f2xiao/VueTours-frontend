@@ -1,0 +1,54 @@
+.row {
+  // 1.define the width
+  max-width: $grid-width; // if there is enough space available then it will have the width that we specified, if not enough, it wll fill 100% of th available space
+  // background-color: #eee;
+  // 2. always center the row in the viewport
+  margin: 0 auto; // trick used to center a block element inside another block element
+
+  &:not(:last-child) {
+    // the not pseudo class selects everything exept the last child element
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+  // ^ allows us to only select class that starts with "col-"
+  // * allows us to only select class that contains "col-"
+  // $ allows us to only select class that ends with "col-"
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+
+  .col-2-of-3 {
+    width: calc(
+      (100% - 2 * #{$gutter-horizontal}) / 3 * 2 + #{$gutter-horizontal}
+    );
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(
+      (100% - 3 * #{$gutter-horizontal}) / 4 * 2 + #{$gutter-horizontal}
+    );
+  }
+
+  .col-3-of-4 {
+    width: calc(
+      (100% - 3 * #{$gutter-horizontal}) / 4 * 3 + 2 * #{$gutter-horizontal}
+    );
+  }
+}
