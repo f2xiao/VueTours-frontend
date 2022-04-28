@@ -1,4 +1,4 @@
-# vuetours-frontend
+# vuerestaurant-frontend
 
 ## Project setup
 ```
