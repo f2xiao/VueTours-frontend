@@ -56,12 +56,12 @@ export default {
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            // background-color: $color-secondary-light;
+            background-color: $color-white;
         }
 
         &--back {
             transform: rotateY(180deg);
-            background-color: $color-secondary-dark;
+            background-color: $color-white;
         }
     }
   
@@ -77,14 +77,16 @@ export default {
 
     // FRONT SIDE STYLING
     &__picture {
-        background-size: cover;
+        background-size: 80%;
+        background-repeat: no-repeat;
         height: 23rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        background-image:  url(@/assets/img/3.png);
+        background-image:  url(@/assets/img/4.png);
+        opacity: 0.5;
     }
 
     &__heading {
@@ -92,7 +94,7 @@ export default {
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
-        color: $color-primary-light;
+        // color: $color-secondary-light;
         position: absolute;
         top: 12rem;
         right: 2rem;
@@ -111,7 +113,7 @@ export default {
 
     &__details {
         padding: 3rem;
-        // background: $color-secondary-dark;
+        background: $color-secondary-light;
 
         ul {
             list-style: none;
@@ -142,7 +144,7 @@ export default {
 
     &__price-box {
         text-align: center;
-        color: $color-primary-dark;
+        // color: $color-primary-dark;
         margin-bottom: 4rem;
     }
 

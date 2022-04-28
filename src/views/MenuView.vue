@@ -14,6 +14,7 @@
 .menu-box{
   height: calc(100vh - 6rem);
   background: $color-white;
+  
     // background-image: url(@/assets/img/top-corner.png), url(@/assets/img/bottom-corner.png);
     // background-size: auto;
     // background-repeat: no-repeat, no-repeat;
