@@ -48,17 +48,17 @@ export default {
             images:[
                 {   
                     id:'1',
-                    src:require('@/assets/img/nat-1.jpg'),
+                    src:require('@/assets/img/fried-noddles.png'),
                     alt:'Photo 1'
                 },
                 {
                     id:'2',
-                    src:require('@/assets/img/nat-2.jpg'),
+                    src:require('@/assets/img/2.png'),
                     alt:'Photo 2'
                 },
                 {
                     id:'3',
-                    src:require('@/assets/img/nat-3.jpg'),
+                    src:require('@/assets/img/3.png'),
                     alt:'Photo 3'
                 }
             ]

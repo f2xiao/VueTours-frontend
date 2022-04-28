@@ -1,14 +1,16 @@
 <template>
   <header class="header">
       <div class="header__logo-box">
-        <img src="@/assets/img/logo-white.png" alt="Logo" class="header__logo" />
+        <img src="@/assets/img/logo.png" alt="Logo" class="header__logo" />
       </div>
       <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Outdoors</span>
-          <span class="heading-primary--sub">is where life happens</span>
+        <h1 class="heading-primary--main">
+          <span>Oriental Pearl</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <h1 class="heading-primary--sub">
+         <span>the most authenticated Southern Chinese Food</span>
+        </h1>
+        <a href="#" class="btn btn--white btn--animated">ORDER now!</a>
       </div>
     </header>
 </template>
@@ -21,15 +23,11 @@ export default {
 
 <style lang="scss">
 .header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(@/assets/img/hero.jpg);
-  background-size: cover;
-  background-position: top;
+  height: 90vh;
+  background-image: url(@/assets/img/hero.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
@@ -40,15 +38,27 @@ export default {
   }
 
   &__logo {
-    height: 3.5rem;
+    height: 8rem;
   }
 
   &__text-box {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    // top: 40%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // text-align: center;
+    .heading-primary--main{
+      position: absolute;
+      right:0;
+
+    }
+    .heading-primary--sub{
+      position: absolute;
+      left:0;
+    
+    }
   }
 }
 </style>

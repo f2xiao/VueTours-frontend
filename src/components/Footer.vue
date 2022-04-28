@@ -2,12 +2,11 @@
   <footer class="footer">
       <div class="footer__logo-box">
         <img
-          src="@/assets/img/logo-green-2x.png"
+          src="@/assets/img/logo.png"
           alt="Full logo"
           class="footer__logo"
         />
-      </div>
-      <div class="row">
+         <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
@@ -19,10 +18,12 @@
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Designed by <a href="#" class="footer__link">Jonas Schmedtmann</a> built by <a href="https://github.com/f2xiao" class="footer__link">f2xiao</a>
+            Built by <a href="https://github.com/f2xiao" class="footer__link">f2xiao</a>
           </p>
         </div>
       </div>
+      </div>
+     
     </footer>
 </template>
 
@@ -33,7 +34,15 @@ export default {
       return {
         links:[
           {
-          name: 'Company',
+          name: 'Daily Special',
+          href: '#'
+          },
+          {
+          name: 'Order',
+          href: '#'
+          },
+          {
+          name: 'Menu',
           href: '#'
           },
           {
@@ -41,15 +50,7 @@ export default {
           href: '#'
           },
           {
-          name: 'Careers',
-          href: '#'
-          },
-          {
-          name: 'Privacy policy',
-          href: '#'
-          },
-          {
-          name: 'Terms',
+          name: 'About',
           href: '#'
           },
         ]
@@ -60,16 +61,16 @@ export default {
 
 <style lang="scss">
 .footer {
-  background-color: $color-grey-dark-3;
+  background-color: $color-primary-light;
   font-size: 1.4rem;
-  padding: 10rem 0;
+  padding: 2rem 0;
   color: $color-grey-light-1;
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
   }
   &__logo {
-    width: 15rem;
+    width: 4rem;
     height: auto;
   }
   &__navigation {
