@@ -1,9 +1,9 @@
 <template>
-  <header class="header">
-      <div class="header__logo-box">
-        <img src="@/assets/img/logo.png" alt="Logo" class="header__logo" />
+  <div class="home">
+      <div class="home__logo-box">
+        <img src="@/assets/img/logo.png" alt="Logo" class="home__logo" />
       </div>
-      <div class="header__text-box">
+      <div class="home__text-box">
        <div class="heading-primary">
           <h1 class="heading-primary--main">
           <span>Oriental Pearl</span>
@@ -13,17 +13,17 @@
         </h1>
        </div>
       </div>
-    </header>
+    </div>
 </template>
 
 <script>
 export default {
-    name:'Header'
+    name:'Home'
 }
 </script>
 
 <style lang="scss">
-.header {
+.home {
   height: 90vh;
   background-image: url(@/assets/img/hero.png);
   background-size: auto;
