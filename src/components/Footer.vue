@@ -11,21 +11,9 @@
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Company</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Contact us</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Careers</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Privacy policy</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms</a>
-              </li>
+              <li class="footer__item" v-for="link in links" :key="link.name">
+                <a :href="link.href" class="footer__link">{{link.name}}</a>
+              </li> 
             </ul>
           </div>
         </div>
@@ -40,7 +28,33 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    data() {
+      return {
+        links:[
+          {
+          name: 'Company',
+          href: '#'
+          },
+          {
+          name: 'Contact us',
+          href: '#'
+          },
+          {
+          name: 'Careers',
+          href: '#'
+          },
+          {
+          name: 'Privacy policy',
+          href: '#'
+          },
+          {
+          name: 'Terms',
+          href: '#'
+          },
+        ]
+      }
+    },
 }
 </script>
 
