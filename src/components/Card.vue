@@ -18,7 +18,7 @@
                         <p class="card__price-only">Only</p>
                         <p class="card__price-value">$10</p>
                     </div>
-                    <a href="#popup" class="btn btn--white">Order now!</a>
+                    <a href="#popup" class="btn btn--white">Add to cart</a>
                 </div>
             </div>
         </div>

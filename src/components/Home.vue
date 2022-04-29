@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-      <div class="home__logo-box">
-        <img src="@/assets/img/logo.png" alt="Logo" class="home__logo" />
-      </div>
       <div class="home__text-box">
        <div class="heading-primary">
           <h1 class="heading-primary--main">

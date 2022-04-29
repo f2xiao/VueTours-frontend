@@ -14,6 +14,7 @@
        <card></card>
       </div>
     </div>
+    <cart count="0"></cart>
   </div>
 </template>
 <style lang="scss">
@@ -35,7 +36,9 @@
 </style>
 <script>
 import Card from '@/components/Card.vue'
+import Cart from '@/components/Cart.vue'
 export default {
-  components: { Card },
+  components: { Card, Cart },
+  
 }
 </script>
