@@ -20,6 +20,7 @@
 .menu-box{
   height: calc(100vh - 6rem);
   background: $color-white;
+  width: 100%;
   
     // background-image: url(@/assets/img/top-corner.png), url(@/assets/img/bottom-corner.png);
     // background-size: auto;
@@ -27,7 +28,7 @@
     // background-position: left top, right bottom;
     .menu{
     height: 80%;
-    width: 100%;
+    width: calc(100% - 6rem);
     @include abscenter;
     }
 }
