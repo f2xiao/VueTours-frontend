@@ -5,6 +5,10 @@
        <card></card>
        <card></card>
        <card></card>
+      </div>
+      <div class="row">
+       <card></card>
+       <card></card>
        <card></card>
       </div>
     </div>
@@ -20,8 +24,8 @@
     // background-repeat: no-repeat, no-repeat;
     // background-position: left top, right bottom;
     .menu{
-    height: 60%;
-    width: 80%;
+    height: 80%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
