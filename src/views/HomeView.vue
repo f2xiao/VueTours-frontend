@@ -12,7 +12,7 @@
 .main{
   height: calc(100vh - 6rem);
   position: relative;
-  background:$color-primary-light;
+  background:$color-white;
   .footer__copyright{
     position: fixed;
     right:6rem;
