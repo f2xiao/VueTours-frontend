@@ -43,12 +43,9 @@ export default {
   }
 
   &__text-box {
-    position: absolute;
     height: 80%;
     width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include abscenter;
     // text-align: center;
     .heading-primary--main{
       position: absolute;

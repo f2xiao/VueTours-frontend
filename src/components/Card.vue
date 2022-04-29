@@ -1,5 +1,5 @@
 <template>
-   <div class="col-1-of-3">
+   <div class="col-1-of-4">
         <div class="card">
             <div class="card__side card__side--front">
                 <div class="card__picture">
@@ -9,9 +9,7 @@
                     <span class="card__heading-span">Fried Dumplings</span>
                 </h4>
                 <div class="card__details">
-                    <ul>
-                        <li>Pork, Green onion, Cabbages</li>
-                     </ul>
+                    <p>Pork, Green onion, Cabbages</p>
                 </div>
             </div>
             <div class="card__side card__side--back card__side--back-1">
@@ -81,10 +79,6 @@ export default {
         background-repeat: no-repeat;
         height: 23rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
         background-image:  url(@/assets/img/4.png);
         opacity: 0.5;
     }
@@ -94,7 +88,6 @@ export default {
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
-        // color: $color-secondary-light;
         position: absolute;
         top: 12rem;
         right: 2rem;
@@ -105,39 +98,26 @@ export default {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        // background-image: linear-gradient(to right bottom, 
-        //     rgba($color-primary-light, .85), 
-        //     rgba($color-tertiary-light, .85));
 
     }   
 
     &__details {
-        padding: 3rem;
+        height: calc(100% - 23rem);
         background: $color-secondary-light;
 
-        ul {
+        p {
             list-style: none;
             width: 80%;
             margin: 0 auto;
-
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
-            }
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 2rem;
         }
     }
 
     // FRONT SIDE STYLING
     &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include abscenter;
         width: 90%;
         text-align: center;
     }
