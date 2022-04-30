@@ -2,19 +2,16 @@
   <div class="menu-box">
     <div class="menu">
       <div class="row">
-       <card></card>
-       <card></card>
-       <card></card>
-       <card></card>
+          <div class="col-1-of-3" v-for="product in productItems.slice(0, 3)" :key="product.id">
+            <card :item="product"></card>
+          </div> 
       </div>
       <div class="row">
-       <card></card>
-       <card></card>
-       <card></card>
-       <card></card>
+          <div class="col-1-of-3" v-for="product in productItems.slice(3)" :key="product.id">
+            <card :item="product"></card>
+          </div> 
       </div>
     </div>
-    <cart count="0"></cart>
   </div>
 </template>
 <style lang="scss">
@@ -35,10 +32,17 @@
 }
 </style>
 <script>
+import { mapGetters } from 'vuex';
 import Card from '@/components/Card.vue'
-import Cart from '@/components/Cart.vue'
+
 export default {
-  components: { Card, Cart },
-  
+  components: { Card },
+  computed: {
+    ...mapGetters([
+      'productItems'])
+  },
+  created() {
+    this.$store.dispatch('getProductItems');
+  }
 }
 </script>

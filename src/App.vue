@@ -3,8 +3,15 @@
    <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/menu">Menu</router-link>
-  </nav>
-  <router-view/>
+    <div>
+       <router-link to="/cart">
+       <p>
+         Total cart items:<span>{{cartQuantity}}</span>
+        </p>
+    </router-link>
+    </div>
+    </nav>
+    <router-view/>
 </div>
 </template>
 <style lang="scss">
@@ -18,3 +25,16 @@
   }
   }
 </style>
+<script>
+import { mapGetters } from 'vuex';
+export default {
+   computed: {
+    ...mapGetters([
+      'cartQuantity'])
+  },
+   created() {
+    this.$store.dispatch("getCartItems");
+  }
+  
+}
+</script>

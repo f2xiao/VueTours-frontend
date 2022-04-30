@@ -20,12 +20,12 @@ const actions = {
     });
   },
   removeCartItem ({ commit }, cartItem) {
-    axios.delete('/api/cart/delete', cartItem).then((response) => {
+    axios.delete(`/api/cart/${cartItem.id}`, cartItem).then((response) => {
       commit('UPDATE_CART_ITEMS', response.data)
     });
   },
   removeAllCartItems ({ commit }) {
-    axios.delete('/api/cart/delete/all').then((response) => {
+    axios.delete('/api/cart').then((response) => {
       commit('UPDATE_CART_ITEMS', response.data)
     });
   }
