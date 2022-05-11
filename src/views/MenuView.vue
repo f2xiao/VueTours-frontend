@@ -38,8 +38,7 @@ import Card from '@/components/Card.vue'
 export default {
   components: { Card },
   computed: {
-    ...mapGetters([
-      'productItems'])
+    ...mapGetters(['productItems'])
   },
   created() {
     this.$store.dispatch('getProductItems');
