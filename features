@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T18:29:03.603Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="TN8loBpIpDd9rpxnAqYX" version="18.0.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-11T18:29:32.399Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="JGxU0N0tUB-waX-MpS3f" version="18.0.3" type="github" pages="3">
   <diagram id="YqpdkEXC0t6Lgrhe-4sm" name="01 vuex - store">
     <mxGraphModel dx="2778" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -164,7 +164,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="shoppingCart">
-    <mxGraphModel dx="1587" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2222" dy="1356" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -178,7 +178,7 @@
           <mxGeometry x="50" y="130" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="vlHpHAH64EKDCvg0ty8H-7" value="Cart" style="swimlane;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="119" y="380" width="290" height="390" as="geometry" />
+          <mxGeometry x="118" y="310" width="290" height="390" as="geometry" />
         </mxCell>
         <mxCell id="vlHpHAH64EKDCvg0ty8H-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;state&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;items = [ ]&lt;br&gt;checkoutStatus: null&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="vlHpHAH64EKDCvg0ty8H-7" vertex="1">
           <mxGeometry x="20" y="30" width="250" height="70" as="geometry" />
@@ -193,7 +193,7 @@
           <mxGeometry x="20" y="270" width="250" height="100" as="geometry" />
         </mxCell>
         <mxCell id="vlHpHAH64EKDCvg0ty8H-8" value="Products" style="swimlane;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="440" y="380" width="270" height="390" as="geometry" />
+          <mxGeometry x="439" y="310" width="270" height="390" as="geometry" />
         </mxCell>
         <mxCell id="YioTeBOcZU8GWN5ylOkE-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;state&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;all= [ ]&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="vlHpHAH64EKDCvg0ty8H-8">
           <mxGeometry x="20" y="30" width="230" height="70" as="geometry" />
@@ -208,7 +208,7 @@
           <mxGeometry x="20" y="270" width="230" height="70" as="geometry" />
         </mxCell>
         <mxCell id="z_hMgRE0hchOMShXKdsv-3" value="vue component: ProductList" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="440" y="800" width="310" height="270" as="geometry" />
+          <mxGeometry x="439" y="740" width="310" height="270" as="geometry" />
         </mxCell>
         <mxCell id="z_hMgRE0hchOMShXKdsv-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;created&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;this.$store.dispatch(&#39;products/getAllProducts&#39;)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="z_hMgRE0hchOMShXKdsv-3">
           <mxGeometry x="20" y="30" width="270" height="60" as="geometry" />
@@ -220,7 +220,7 @@
           <mxGeometry x="20" y="190" width="270" height="70" as="geometry" />
         </mxCell>
         <mxCell id="z_hMgRE0hchOMShXKdsv-8" value="vue component: ShoppingCart" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="800" width="330" height="270" as="geometry" />
+          <mxGeometry x="79" y="740" width="330" height="270" as="geometry" />
         </mxCell>
         <mxCell id="z_hMgRE0hchOMShXKdsv-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;computed&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;checkoutStatus: state =&amp;gt; state.cart.checkoutStatus&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="z_hMgRE0hchOMShXKdsv-8">
           <mxGeometry x="20" y="30" width="290" height="60" as="geometry" />
