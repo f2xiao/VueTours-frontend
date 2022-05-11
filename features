@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T18:12:09.838Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="KsoiLdI5XeMke2_sV7z-" version="18.0.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-11T18:15:46.751Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="RLHFFDtDTenl2pc9pWL_" version="18.0.3" type="github" pages="3">
   <diagram id="YqpdkEXC0t6Lgrhe-4sm" name="01 vuex - store">
     <mxGraphModel dx="2778" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -164,7 +164,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="shoppingCart">
-    <mxGraphModel dx="926" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1587" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -193,7 +193,19 @@
           <mxGeometry x="20" y="270" width="250" height="100" as="geometry" />
         </mxCell>
         <mxCell id="vlHpHAH64EKDCvg0ty8H-8" value="Products" style="swimlane;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="509" y="380" width="200" height="200" as="geometry" />
+          <mxGeometry x="440" y="380" width="270" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="YioTeBOcZU8GWN5ylOkE-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;state&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;all= [ ]&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="vlHpHAH64EKDCvg0ty8H-8">
+          <mxGeometry x="20" y="30" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YioTeBOcZU8GWN5ylOkE-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;getters&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="vlHpHAH64EKDCvg0ty8H-8">
+          <mxGeometry x="20" y="110" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YioTeBOcZU8GWN5ylOkE-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;actions&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&amp;nbsp;async getAllProducts ({ commit })&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="vlHpHAH64EKDCvg0ty8H-8">
+          <mxGeometry x="20" y="190" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YioTeBOcZU8GWN5ylOkE-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;mutations&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;setProducts (state, products)&lt;br&gt;decrementProductInventory (state, { id })&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="vlHpHAH64EKDCvg0ty8H-8">
+          <mxGeometry x="20" y="270" width="230" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
