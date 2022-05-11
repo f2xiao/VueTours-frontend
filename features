@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T18:01:55.457Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="U2ydxAOWqfxAwOHd83Gs" version="18.0.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-11T18:12:09.838Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="KsoiLdI5XeMke2_sV7z-" version="18.0.3" type="github" pages="3">
   <diagram id="YqpdkEXC0t6Lgrhe-4sm" name="01 vuex - store">
     <mxGraphModel dx="2778" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -154,8 +154,11 @@
         <mxCell id="rSyxPfhYRA3VxPCq1cA6-2" value="namespacedModuleActionName: {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;root: true,&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;handler(namespacedContext, payload){...}&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="130" y="880" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f7iLe8j3ghh4twm-jmiM-1" value="frontend component events trigger the dispatch of actions(via component method), and actions commit mutations, then mutations mutate the state =&amp;gt; UI changes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="492" y="200" width="300" height="60" as="geometry" />
+        <mxCell id="f7iLe8j3ghh4twm-jmiM-1" value="when a DOM event happens, it triggers the dispatch of actions(via component method), and actions commit mutations, then mutations mutate the state &lt;br&gt;=&amp;gt; UI changes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="492" y="180" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7iLe8j3ghh4twm-jmiM-2" value="v-on bind DOM event listeners to component methods, mapActions maps actions to component methods" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="490" y="140" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
