@@ -1,14 +1,14 @@
 <template>
   <div>
     <div>
-        <span>{{cartItem.title}}</span>
+        <span>{{item.title}}</span>
         <div>
             <span>
-                ${{cartItem.price}} X {{cartItem.quantity}}
+                ${{item.price}} X {{item.quantity}}
             </span>
             <span>
-                <button  @click="addCartItem(cartItem)">+</button>
-                <button  @click="removeCartItem(cartItem)">-</button>
+                <button  @click="incrementItemQuantity(item)">+</button>
+                <button  @click="decrementItemQuantity(item)">-</button>
             </span>
         </div>
     </div>
@@ -19,13 +19,13 @@
 import { mapActions } from 'vuex';
 export default {
     name:'CartItem',
-    props: ['cartItem'],
+    props: ['item'],
     methods: {
-    ...mapActions([
-      'addCartItem',
-      'removeCartItem'
+    ...mapActions('cart',[
+      'incrementItemQuantity',
+      'decrementItemQuantity'
     ])
-  }
+  },
 }
 </script>
 

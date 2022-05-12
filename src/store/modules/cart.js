@@ -6,21 +6,13 @@ const state = {
 const mutations = {
   SET_CART_ITEMS (state, payload) {
     state.cartItems = payload;
-  }
-}
-
-const actions = {
-  getSavedCartItems ({ commit }) {
-    axios.get('/api/cart').then((response) => {
-      commit('SET_CART_ITEMS', response.data)
-    });
   },
   pushProductToCart ({id}, state) {
-      state.items.push({
-        id,
-        quantity: 1 
-    })
-    },
+    state.items.push({
+      id,
+      quantity: 1 
+  })
+  },
   incrementItemQuantity (state, {id}) {
     const cartItem = state.items.find(item => item.id === id)
         cartItem.quantity++
@@ -37,6 +29,27 @@ decrementItemQuantity(state, { id }) {
     setCheckoutStatus (state, status) {
         state.checkoutStatus = status
     }
+}
+
+const actions = {
+  getSavedCartItems ({ commit }) {
+    axios.get('/api/cart').then((response) => {
+      commit('SET_CART_ITEMS', response.data)
+    });
+  },
+  addProductToCart({ state, commit }, product) {
+    commit('setCheckoutStatus', null)
+    if (product.inventory > 0) {
+      const cartItem = state.items.find(item => item.id === product.id)
+      if (!cartItem) {
+        commit('pushProductToCart', { id: product.id })
+      } else {
+        commit('incrementItemQuantity', cartItem)
+      }
+      // remove 1 item from stock
+      commit('products/decrementProductInventory', { id: product.id }, { root: true })
+    }
+  }
 }
 
 const getters = {

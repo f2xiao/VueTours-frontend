@@ -5,7 +5,7 @@
     </p>
     <ul>
         <li class="cart-item" v-for="product in products" :key="product.id">
-          <cart-item :cartItem="product"/>
+          <cart-item :item="product"/>
         </li>
         <div>
             <p>Total Quantity:
@@ -34,9 +34,6 @@ export default {
       total:'cart/cartTotalPrice'
     }),
   },
-  methods: {
-    ...mapActions('cart',["incrementItemQuantity", "decrementItemQuantity"]),
-  }
 }
 </script>
 
