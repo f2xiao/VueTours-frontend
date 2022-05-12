@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T22:14:54.575Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="Hca7aWjdPk-FL4XNoxm5" version="18.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-05-12T18:55:02.890Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="uLJ6Ga2UWQ5spaBQsW-n" version="18.0.3" type="github" pages="5">
   <diagram id="YqpdkEXC0t6Lgrhe-4sm" name="01 vuex - store">
-    <mxGraphModel dx="1429" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1240" dy="848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -164,7 +164,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="03 features">
-    <mxGraphModel dx="1619" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1550" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -189,7 +189,7 @@
         <mxCell id="vlHpHAH64EKDCvg0ty8H-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;actions&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;checkout({commit, state}, products)&lt;br&gt;addProductToCart({commit, state}, product)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="vlHpHAH64EKDCvg0ty8H-7" vertex="1">
           <mxGeometry x="20" y="190" width="250" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="vlHpHAH64EKDCvg0ty8H-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;mutations&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;pushProductToCart({id}, state)&lt;br&gt;incrementItemQuantity (state, { id })&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;setCartItems (state, { items })&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;setCheckoutStatus (state, status)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="vlHpHAH64EKDCvg0ty8H-7" vertex="1">
+        <mxCell id="vlHpHAH64EKDCvg0ty8H-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-decoration-line: underline; margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;mutations&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;pushProductToCart(&lt;span style=&quot;background-color: initial;&quot;&gt;state，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;{id})&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;incrementItemQuantity (state, { id })&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;setCartItems (state, { items })&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;setCheckoutStatus (state, status)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="vlHpHAH64EKDCvg0ty8H-7" vertex="1">
           <mxGeometry x="20" y="270" width="250" height="100" as="geometry" />
         </mxCell>
         <mxCell id="vlHpHAH64EKDCvg0ty8H-8" value="Products" style="swimlane;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
