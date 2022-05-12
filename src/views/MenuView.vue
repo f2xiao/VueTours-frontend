@@ -1,5 +1,9 @@
 <template>
-  <div class="menu-box">
+  <div class="menu-view">
+     <p>
+      <button class="cart"  @click='showCartPanel=!showCartPanel'>cart:<span>{{cartTotalQuantity}}</span></button>
+    </p>
+    <cart-panel v-show='showCartPanel' class="cart-panel"></cart-panel>
     <div class="menu">
       <div class="row">
           <div class="col-1-of-3" v-for="product in productItems.slice(0, 3)" :key="product.id">
@@ -15,33 +19,53 @@
   </div>
 </template>
 <style lang="scss">
-.menu-box{
-  height: calc(100vh - 6rem);
+.menu-view{
   background: $color-white;
-  width: 100%;
-  
-    // background-image: url(@/assets/img/top-corner.png), url(@/assets/img/bottom-corner.png);
-    // background-size: auto;
-    // background-repeat: no-repeat, no-repeat;
-    // background-position: left top, right bottom;
-    .menu{
-    height: 80%;
-    width: calc(100% - 6rem);
-    @include abscenter;
+  // width:100vw;
+  // height:100vh;
+  margin-top:7rem;
+  margin-left:7rem;
+  .cart-panel{
+      float:left;
+      height: 60vh;
+      width: 10%;
+      top: 7rem;
+      z-index:2;
+    }
+    .menu{  
+      float:left;
+      width: 80%;
+    }
+    .cart{
+      position:fixed;
+      left: 7rem;
+      bottom: 4rem;
     }
 }
 </style>
 <script>
 import { mapGetters } from 'vuex';
 import Card from '@/components/Card.vue'
+import CartPanel from '@/components/CartPanel.vue';
 
 export default {
-  components: { Card },
+  components: { Card, CartPanel },
+  data(){
+    return{
+      isLoggedIn: false,
+      showCartPanel: false,
+    }
+  },
   computed: {
-    ...mapGetters(['productItems'])
+    ...mapGetters(['productItems', 'cart/cartTotalQuantity'])
   },
   created() {
     this.$store.dispatch('getProductItems');
+  },
+  beforemounted() {
+    if(isLoggedIn){
+      this.$store.dispatch("getSavedCartItems");
+    }
   }
 }
 </script>

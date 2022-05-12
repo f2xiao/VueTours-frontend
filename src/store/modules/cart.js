@@ -8,7 +8,6 @@ const mutations = {
     state.cartItems = payload;
   },
   pushProductToCart(state,{ id, price, title }) {
-    console.log(state.items)
     state.items.push({
       id,
       price,
@@ -18,20 +17,20 @@ const mutations = {
   },
   incrementItemQuantity (state, {id}) {
     const cartItem = state.items.find(item => item.id === id)
-        cartItem.quantity++
-    },
+    cartItem.quantity++
+  },
   
-decrementItemQuantity(state, { id }) {
+  decrementItemQuantity(state, { id }) {
     const cartItem = state.items.find(item => item.id === id);
     if (cartItem.quantity == 1) {
-       state.items = state.items.filter(item => item.id != cartItem.id) 
+      state.items = state.items.filter(item => item.id != cartItem.id) 
     } else {
         cartItem.quantity--
     }
-    },
-    setCheckoutStatus (state, status) {
-        state.checkoutStatus = status
-    }
+  },
+  setCheckoutStatus (state, status) {
+      state.checkoutStatus = status
+  }
 }
 
 const actions = {
@@ -45,7 +44,6 @@ const actions = {
     if (product.inventory > 0) {
       const cartItem = state.items.find(item => item.id === product.id)
       if (!cartItem) {
-        console.log(product);
         commit('pushProductToCart', product)
       } else {
         commit('incrementItemQuantity', cartItem)

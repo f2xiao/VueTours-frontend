@@ -2,14 +2,15 @@
   <div>
     <div>
         <span>{{item.title}}</span>
-        <div>
-            <span>
-                ${{item.price}} X {{item.quantity}}
+        <div class="des">
+            <span @hover='showActions = !showActions'>
+                 {{item.quantity}} 
             </span>
-            <span>
+            <span v-show="showActions">
                 <button  @click="incrementItemQuantity(item)">+</button>
                 <button  @click="decrementItemQuantity(item)">-</button>
             </span>
+            <span>X ${{item.price}}</span> 
         </div>
     </div>
   </div>
@@ -20,6 +21,9 @@ import { mapActions } from 'vuex';
 export default {
     name:'CartItem',
     props: ['item'],
+    data(){
+      showActions:false
+    },
     methods: {
     ...mapActions('cart',[
       'incrementItemQuantity',
@@ -29,6 +33,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
+.des{
+  display: flex;
+}
 
 </style>
