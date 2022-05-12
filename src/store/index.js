@@ -1,5 +1,5 @@
 import { createStore } from 'vuex';
-import product from './modules/product';
+import products from './modules/product';
 import cart from './modules/cart';
 
 export default createStore({
@@ -12,7 +12,7 @@ export default createStore({
   actions: {
   },
   modules: {
-    product,
+    products,
     cart
   }
 })

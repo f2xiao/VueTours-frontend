@@ -31,7 +31,7 @@ export default {
      methods: {
     ...mapActions({
         addItem: 'cart/addProductToCart'
-    }),
+    })
   },
 }
 </script>

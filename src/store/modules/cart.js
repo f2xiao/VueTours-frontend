@@ -7,9 +7,12 @@ const mutations = {
   SET_CART_ITEMS (state, payload) {
     state.cartItems = payload;
   },
-  pushProductToCart ({id}, state) {
+  pushProductToCart(state,{ id, price, title }) {
+    console.log(state.items)
     state.items.push({
       id,
+      price,
+      title,
       quantity: 1 
   })
   },
@@ -42,7 +45,8 @@ const actions = {
     if (product.inventory > 0) {
       const cartItem = state.items.find(item => item.id === product.id)
       if (!cartItem) {
-        commit('pushProductToCart', { id: product.id })
+        console.log(product);
+        commit('pushProductToCart', product)
       } else {
         commit('incrementItemQuantity', cartItem)
       }
