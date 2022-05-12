@@ -1,17 +1,14 @@
 <template>
 <div>
-   <nav>
+  <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/menu">Menu</router-link>
-    <div>
-       <router-link to="/cart">
-       <p>
-         Total cart items:<span>{{cartQuantity}}</span>
-        </p>
-    </router-link>
-    </div>
-    </nav>
-    <router-view/>
+    <p>
+      Total cart items:<span>{{cartTotalQuantity}}</span>
+    </p>
+  </nav>
+  <cart-panel class="cart-panel"></cart-panel>
+  <router-view/>
 </div>
 </template>
 <style lang="scss">
@@ -20,21 +17,28 @@
     nav{
     position: fixed;
     left: 7rem;
-    bottom:7rem;
+    bottom: 7rem;
     z-index: 1;
   }
   }
 </style>
 <script>
 import { mapGetters } from 'vuex';
+import CartPanel from './components/CartPanel.vue';
 export default {
-   computed: {
-    ...mapGetters([
-      'cartQuantity'])
+  components: { CartPanel },
+  data(){
+    return {
+      isLoggedIn: false
+    }
   },
-   created() {
-    this.$store.dispatch("getCartItems");
+   computed: {
+    ...mapGetters('cart',['cartTotalQuantity'])
+  },
+   beforemounted() {
+    if(isLoggedIn){
+      this.$store.dispatch("getSavedCartItems");
+    }
   }
-  
 }
 </script>

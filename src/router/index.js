@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CartView from '../views/CartView.vue'
 import MenuView from '../views/MenuView.vue'
 
 const routes = [
@@ -21,11 +20,6 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: MenuView
   },
-  {
-    path: '/cart',
-    name: 'cart',
-    component: CartView
-  }
 ]
 
 const router = createRouter({
