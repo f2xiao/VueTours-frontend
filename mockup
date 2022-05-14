@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T00:00:06.662Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="6UkaHhoXqAvKtRXIS-zi" version="18.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-05-14T00:05:14.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="v76rZl_cISi-YvjX6G_3" version="18.0.3" type="github" pages="5">
   <diagram id="7kPHfp0HUoB3JEiUBvev" name="desktop - home">
     <mxGraphModel dx="2583" dy="1427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
@@ -41,7 +41,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="desktop - menu" id="6zX26uvJA_fwsIYkP3sd">
-    <mxGraphModel dx="2818" dy="1556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="3875" dy="2140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="PrlLlBUH1TJb4UIawTO5-0" />
         <mxCell id="PrlLlBUH1TJb4UIawTO5-1" parent="PrlLlBUH1TJb4UIawTO5-0" />
@@ -83,8 +83,8 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PrlLlBUH1TJb4UIawTO5-13" value="Search" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fontSize=14;fontColor=#6C767D;strokeColor=#CED4DA;fillColor=#ffffff;align=left;spacing=10;" vertex="1" parent="PrlLlBUH1TJb4UIawTO5-7">
-          <mxGeometry x="1" width="180" height="40" relative="1" as="geometry">
-            <mxPoint x="-270" y="10" as="offset" />
+          <mxGeometry x="1" width="491" height="40" relative="1" as="geometry">
+            <mxPoint x="-1046" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PrlLlBUH1TJb4UIawTO5-14" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/02-Shopping_Cart-128.png;fontColor=#6C767D;" vertex="1" parent="PrlLlBUH1TJb4UIawTO5-7">
@@ -271,7 +271,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="desktop - cart - empty" id="gSElrrB5zc95tAx1d2a-">
-    <mxGraphModel dx="2583" dy="1427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="3875" dy="2140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="bmSIoPFZaFQbEmLA2Y4k-0" />
         <mxCell id="bmSIoPFZaFQbEmLA2Y4k-1" parent="bmSIoPFZaFQbEmLA2Y4k-0" />
@@ -313,8 +313,8 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bmSIoPFZaFQbEmLA2Y4k-11" value="Search" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fontSize=14;fontColor=#6C767D;strokeColor=#CED4DA;fillColor=#ffffff;align=left;spacing=10;" vertex="1" parent="bmSIoPFZaFQbEmLA2Y4k-5">
-          <mxGeometry x="1" width="180" height="40" relative="1" as="geometry">
-            <mxPoint x="-270" y="10" as="offset" />
+          <mxGeometry x="1" width="561" height="40" relative="1" as="geometry">
+            <mxPoint x="-1081" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bmSIoPFZaFQbEmLA2Y4k-12" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/02-Shopping_Cart-128.png;fontColor=#6C767D;" vertex="1" parent="bmSIoPFZaFQbEmLA2Y4k-5">
@@ -487,7 +487,7 @@
       <root>
         <mxCell id="FUXfdyKtqpkpcwN1zBTX-0" />
         <mxCell id="FUXfdyKtqpkpcwN1zBTX-1" parent="FUXfdyKtqpkpcwN1zBTX-0" />
-        <mxCell id="FUXfdyKtqpkpcwN1zBTX-2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=left;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=default;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;fillColor=default;fontColor=#000000;html=1;" vertex="1" parent="FUXfdyKtqpkpcwN1zBTX-1">
+        <mxCell id="FUXfdyKtqpkpcwN1zBTX-2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=left;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=none;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;fillColor=default;fontColor=#000000;html=1;" vertex="1" parent="FUXfdyKtqpkpcwN1zBTX-1">
           <mxGeometry width="1600" height="900" as="geometry" />
         </mxCell>
         <mxCell id="FUXfdyKtqpkpcwN1zBTX-3" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="FUXfdyKtqpkpcwN1zBTX-2">
@@ -525,8 +525,8 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FUXfdyKtqpkpcwN1zBTX-11" value="Search" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fontSize=14;fontColor=#6C767D;strokeColor=#CED4DA;fillColor=#ffffff;align=left;spacing=10;" vertex="1" parent="FUXfdyKtqpkpcwN1zBTX-5">
-          <mxGeometry x="1" width="180" height="40" relative="1" as="geometry">
-            <mxPoint x="-270" y="10" as="offset" />
+          <mxGeometry x="1" width="510" height="40" relative="1" as="geometry">
+            <mxPoint x="-1055" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FUXfdyKtqpkpcwN1zBTX-12" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/02-Shopping_Cart-128.png;fontColor=#6C767D;" vertex="1" parent="FUXfdyKtqpkpcwN1zBTX-5">
@@ -646,13 +646,13 @@
         <mxCell id="EuUCKaBrWica1gWO7gkK-33" value="" style="group" vertex="1" connectable="0" parent="EuUCKaBrWica1gWO7gkK-0">
           <mxGeometry x="0.75" width="370" height="730" as="geometry" />
         </mxCell>
-        <mxCell id="EuUCKaBrWica1gWO7gkK-34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EuUCKaBrWica1gWO7gkK-33">
+        <mxCell id="EuUCKaBrWica1gWO7gkK-34" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="EuUCKaBrWica1gWO7gkK-33">
           <mxGeometry width="370" height="730.0000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="EuUCKaBrWica1gWO7gkK-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="EuUCKaBrWica1gWO7gkK-33">
+        <mxCell id="EuUCKaBrWica1gWO7gkK-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=none;fontColor=#ffffff;" vertex="1" parent="EuUCKaBrWica1gWO7gkK-33">
           <mxGeometry y="629.3103448275863" width="370" height="100.68965517241378" as="geometry" />
         </mxCell>
-        <mxCell id="EuUCKaBrWica1gWO7gkK-36" value="Save more with today&#39;s special!" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="EuUCKaBrWica1gWO7gkK-33">
+        <mxCell id="EuUCKaBrWica1gWO7gkK-36" value="Save more with today&#39;s special!" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="EuUCKaBrWica1gWO7gkK-33">
           <mxGeometry width="370" height="64.88888888888889" as="geometry" />
         </mxCell>
         <mxCell id="EuUCKaBrWica1gWO7gkK-37" value="" style="group" vertex="1" connectable="0" parent="EuUCKaBrWica1gWO7gkK-33">
