@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T03:56:56.751Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="D359ka0hh9Ce4BBUrvd1" version="18.0.3" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-05-14T03:57:22.191Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="Z1FgSPC1QBB4nPEmXric" version="18.0.3" type="github" pages="7">
   <diagram id="7kPHfp0HUoB3JEiUBvev" name="desktop - home">
     <mxGraphModel dx="2764" dy="1696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
@@ -1027,7 +1027,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="desktop - order confirmation" id="DP0G1rLKX5TbPS1dnTQ2">
-    <mxGraphModel dx="2764" dy="1696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="2303" dy="1413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="7DtNc7WPXimd4JapXHRa-0" />
         <mxCell id="7DtNc7WPXimd4JapXHRa-1" parent="7DtNc7WPXimd4JapXHRa-0" />
@@ -1061,7 +1061,7 @@
             <mxPoint x="-17" y="-2.5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7DtNc7WPXimd4JapXHRa-9" value="Acct" style="fillColor=none;strokeColor=none;fontSize=14;fontColor=#ADAEAF;align=center;" vertex="1" parent="7DtNc7WPXimd4JapXHRa-5">
+        <mxCell id="7DtNc7WPXimd4JapXHRa-9" value="Acct" style="fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;align=center;" vertex="1" parent="7DtNc7WPXimd4JapXHRa-5">
           <mxGeometry width="80" height="40" relative="1" as="geometry">
             <mxPoint x="220" y="10" as="offset" />
           </mxGeometry>
