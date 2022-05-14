@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T18:19:54.876Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="othTmnCHyKWsKqaYjF76" version="18.0.4" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2022-05-14T18:20:13.253Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="9XA-7_7Da9z3Q6x9aPll" version="18.0.4" type="github" pages="9">
   <diagram id="7kPHfp0HUoB3JEiUBvev" name="desktop - home">
     <mxGraphModel dx="1626" dy="998" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
@@ -1452,7 +1452,7 @@
         <mxCell id="a-Zu6284Dw8xS9JjZCp6-13" value="&lt;font&gt;0&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C767D;" parent="a-Zu6284Dw8xS9JjZCp6-5" vertex="1">
           <mxGeometry x="1560" y="17.5" width="20" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="IJfBYJmM0XSkw-Dn7cZ--0" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;My Acctount&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=20;fontColor=#000000;" parent="a-Zu6284Dw8xS9JjZCp6-2" vertex="1">
+        <mxCell id="IJfBYJmM0XSkw-Dn7cZ--0" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;My Account&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=20;fontColor=#000000;" parent="a-Zu6284Dw8xS9JjZCp6-2" vertex="1">
           <mxGeometry x="730" y="210" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="yOzHTRgFFhu4yBsWeqNp-0" value="&lt;font color=&quot;#000000&quot;&gt;Orders&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;labelBackgroundColor=none;sketch=0;fontSize=12;fontColor=#FFFFFF;" parent="a-Zu6284Dw8xS9JjZCp6-2" vertex="1">
