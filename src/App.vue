@@ -1,27 +1,25 @@
 <template>
-<div>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/menu">Menu</router-link>
-  </nav>
-  <router-view/>
-</div>
+  <v-app>
+    <Header></Header>
+    <v-main>
+      <router-view/>
+    </v-main>
+    <Footer></Footer>                   
+  </v-app>
 </template>
-<style lang="scss">
-  #app{
-    nav{
-      position: fixed;
-      left: 7rem;
-      bottom: 7rem;
-      z-index: 1;
-    }
-    
-}
-  
-</style>
+
 <script>
+import Header from "@/components/Header.vue"
+import Footer from '@/components/Footer.vue'
 export default {
-  
-  
+  name: 'App',
+  components:{
+    Header,
+    Footer
+  }
+  ,
+  data: () => ({
+    //
+  }),
 }
 </script>

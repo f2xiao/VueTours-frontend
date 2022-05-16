@@ -32,10 +32,3 @@ export default {
   },
 }
 </script>
-
-<style lang='scss'>
-.des{
-  display: flex;
-}
-
-</style>

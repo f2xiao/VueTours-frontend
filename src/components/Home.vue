@@ -1,16 +1,18 @@
 <template>
-  <div class="home">
-      <div class="home__text-box">
-       <div class="heading-primary">
-          <h1 class="heading-primary--main">
-          <span>Oriental Pearl</span>
-        </h1>
-        <h1 class="heading-primary--sub">
-         <span>the most authenticated Southern Chinese Food</span>
-        </h1>
-       </div>
-      </div>
-    </div>
+  <v-container class='home'>
+    <v-row  style="height: 44vh;" align="center" justify="center">
+       <v-spacer></v-spacer>
+      <v-col md="6" sm="12">
+          <h1  class="text-h1 ph">Oriental Pearl</h1>
+      </v-col>
+    </v-row>
+    <v-row  style="height: 44vh" align="center" justify="center"> 
+      <v-col md="6" sm="12">
+          <h2 class="text-h2 sh font-italic">the most authenticated Southern Chinese Food</h2>
+      </v-col>
+      <v-spacer></v-spacer>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -21,41 +23,44 @@ export default {
 
 <style lang="scss">
 .home {
-  height: 90vh;
+  // height: 100%;
   background-image: url(@/assets/img/hero.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  &__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
+  @keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
   }
-
-  &__logo {
-    height: 8rem;
+  80% {
+    transform: translateX(1rem);
   }
-
-  &__text-box {
-    height: 80%;
-    width: 80%;
-    @include abscenter;
-    // text-align: center;
-    .heading-primary--main{
-      position: absolute;
-      right:0;
-      max-width:50rem;
-    }
-    .heading-primary--sub{
-      position: absolute;
-      left:0;
-      bottom:0;
-      max-width: 60rem;
-    
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.ph{
+  animation: moveInRight 1.5s ease-in-out
+}
+.sh{
+  animation: moveInLeft 1.5s ease-in-out
+}
+}
+
 </style>

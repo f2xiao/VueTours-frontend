@@ -18,31 +18,7 @@
     </div>
   </div>
 </template>
-<style lang="scss">
-.menu-view{
-  background: $color-white;
-  // width:100vw;
-  // height:100vh;
-  margin-top:7rem;
-  margin-left:7rem;
-  .cart-panel{
-      float:left;
-      height: 60vh;
-      width: 10%;
-      top: 7rem;
-      z-index:2;
-    }
-    .menu{  
-      float:left;
-      width: 80%;
-    }
-    .cart{
-      position:fixed;
-      left: 7rem;
-      bottom: 4rem;
-    }
-}
-</style>
+
 <script>
 import { mapGetters } from 'vuex';
 import Card from '@/components/Card.vue'

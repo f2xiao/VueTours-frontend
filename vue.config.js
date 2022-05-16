@@ -1,6 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
+const { VuetifyLoaderPlugin } = require('vuetify-loader')
 module.exports = defineConfig({
   transpileDependencies: true,
+
   devServer: {
     proxy: {
       '/api': {
@@ -12,11 +14,18 @@ module.exports = defineConfig({
       }
     }
   },
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `@import "@/assets/styles/main.scss";`
-      }
-    }
+
+  // css: {
+  //   loaderOptions: {
+  //     sass: {
+  //       additionalData: `@import "@/assets/styles/main.scss";`
+  //     }
+  //   }
+  // },
+
+  pluginOptions: {
+    vuetify: {
+			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
+		}
   }
 })
