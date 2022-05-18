@@ -10,6 +10,7 @@ import Home from '../components/Home.vue';
 
 export default defineComponent({
   name: 'HomeView',
+
   components: {
     Home,
   },

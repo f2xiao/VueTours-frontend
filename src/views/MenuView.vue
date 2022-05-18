@@ -1,31 +1,21 @@
 <template>
   <div class="menu-view">
-     <p>
-      <button class="cart"  @click='showCartPanel=!showCartPanel'>cart:<span>{{cartTotalQuantity}}</span></button>
-    </p>
-    <cart-panel v-show='showCartPanel' class="cart-panel"></cart-panel>
-    <div class="menu">
-      <div class="row">
-          <div class="col-1-of-3" v-for="product in productItems.slice(0, 3)" :key="product.id">
-            <card :item="product"></card>
-          </div> 
-      </div>
-      <div class="row">
-          <div class="col-1-of-3" v-for="product in productItems.slice(3)" :key="product.id">
-            <card :item="product"></card>
-          </div> 
-      </div>
-    </div>
+    <v-container>
+      <v-row>
+        <v-col cols="lg-4 md-6 sm-12" v-for="product in productItems" :key="product.id">
+          <menu-card :item="product"></menu-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
-import Card from '@/components/Card.vue'
-import CartPanel from '@/components/CartPanel.vue';
+import MenuCard from '../components/MenuCard.vue';
 
 export default {
-  components: { Card, CartPanel },
+  components: { MenuCard },
   data(){
     return{
       isLoggedIn: false,
@@ -33,7 +23,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['productItems', 'cart/cartTotalQuantity'])
+    ...mapGetters(['productItems'])
   },
   created() {
     this.$store.dispatch('getProductItems');
